@@ -71,7 +71,7 @@ app.post("/api/users/:_id/exercises", async (req, res) => {
     const exercise = await exerciseObj.save();
 
     res.json({
-      id: user._id,
+      _id: user._id,
       username: user.username,
       description: exercise.description,
       duration: exercise.duration,
